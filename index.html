@@ -69,7 +69,7 @@
                 <div id="profile-name">Ansh Shah</div>
                 <p>
 
-                    Currently I am a care-free learner collaborating with research groups on interesting topics. Previously I was a research assistant at the <a href="https://robotics.iiit.ac.in/">Robotics Research
+                    Currently I am a Research Consultant for Droneview BV, Netherlands. I am also exploring interesting topics spanning RL and 3D vision. Previously I was a research assistant at the <a href="https://robotics.iiit.ac.in/">Robotics Research
                         Center (RRC)</a> , IIIT Hyderabad, under the
                     guidance of <a href="https://scholar.google.co.in/citations?user=QDuPGHwAAAAJ">Prof Madhava
                         Krishna</a> . My interest lies in the field of <b>Robot Learning</b> and <b>3D Vision</b>.
@@ -90,18 +90,16 @@
                 <br>
                 <br>
                 <h1>Research Interests & Ideas</h1>
-                <p>My research interests focus on the trio of action, perception, and cognition, where I aim to build machines that can perceive and understand the real world, recognize the physical consequences of their actions, and explore novel behaviors to achieve complex goals. I am especially driven by the challenge of creating embodiment-aware generalist agents that can adapt to new tasks without task-specific training data. I believe that while high-level reasoning can often be abstracted or mimicked effectively, the true challenge lies in developing robust low-level control. Contrary to the common approach of learning low-level manipulation through imitation of human-teleoperated demonstrations or skill transfer from videos, I argue that robots should learn low-level control by acquiring state-based local policies using reinforcement learning, which allows them to explore and understand their own capabilities.
+                <p>My research interests focus on the trio of action, perception, and cognition, where I aim to build machines that can perceive and understand the real world, recognize the physical consequences of their actions, and explore novel behaviors to achieve complex goals.
 
                     A few fundamental question in the field of robot learning that I am interested in are:
                     <a>1.</a> At what level in the TAMP hierarchy should we build robust representations for embodiment
                     generalisation?
                     <a>2.</a> How can we learn to control robots in a data efficient manner?
                     <a>3.</a> Can learning a grounded 3D scene representation help in learning better policies?
-
-                    <!-- I believe that there is a lot to be explored in the field of colloborative RL, like the task of dual
-                    arm manipulation where the robot has to learn to use both arms to manipulate the same object
-                    together. Understanding of Physics cannot is difficult to design into rewards and we need to explore
-                    the idea of learning physics in an unsupervied fashion. -->
+                    <a>4.</a> How can we leverage sub-optimal transition and state data to build better policies. Inverse-RL based labelling of data (Depth Anything V2 like synthetic trainnig for Inverse RL and relabeeling real data) with Offline RL or Goal Conditioned Offline RL at scale to augemnt data for Offline RL which is better?
+                    <a>5.</a> Is there a way to build composable policies for composable robot. (manipulator + mobile robot = mobile manipulator, is there a way such that manipulation policy + mobile robot policy = mobile manipulator policy)
+                    <a>6.</a> Can we create a unified representation for all forms of robots like manipuilators, humanoids, quadrupeds, mobile manipulators,... (excluding soft robots; that's too ambitious for now)
 
 
                     <!-- I believe that high level cognition <a
@@ -143,18 +141,36 @@
             </div>
             <div style="clear: both;"></div>
         </div>
-        <h1 style="line-height: 0;">Highlights</h1>
-        <p style="margin-left: 30px;">(Scroll right to view more; Click for details)</p>
-        <!-- <div class="section recent-work">
-            <div class="slider">
-                <a href="https://www.google.com"><img src="data/projects/obstacle_avoidance_drone_fast.gif"></a>
-            </div>
-        </div> -->
+        <h1 style="line-height: 0;">Recent Work</h1>
+        <!-- <p style="margin-left: 30px;">(Scroll right to view more; Click for details)</p> -->
+       <div class="section recent-work">
+            <div class="slider" style="
+                display:flex;
+                gap:16px;
+                overflow-x:auto;           /* horizontal scroll */
+                scroll-snap-type:x mandatory;
+                -webkit-overflow-scrolling:touch;
+                padding-bottom:8px;        /* room for scrollbar */
+            ">
+                <video autoplay loop muted playsinline
+                    style="flex:0 0 auto; width:400px; height:auto; border-radius:8px; scroll-snap-align:start;">
+                <source src="data/projects/RL/OGCRL_with_multistep_temporal_metric_distillation_and_informed_subgoals.mp4" type="video/mp4">
+                </video>
 
-        <div hidden="hidden">
-            <script type="text/javascript" id="clustrmaps"
-                src="//clustrmaps.com/map_v2.js?d=dySj_P0p0xWfW1-ictpqnnjw0bJfpblnEo6MTLEstoM&cl=ffffff&w=a"></script>
+                <video autoplay loop muted playsinline
+                    style="flex:0 0 auto; width:400px; height:auto; border-radius:8px; scroll-snap-align:start;">
+                <source src="data/projects/VL Maps/2D 3D semnatic seg.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
+
+
+       <!-- <video autoplay loop muted playsinline 
+            style="width:400px; height:auto; border-radius:8px; display:block; margin:0 auto;">
+        <source src="data/projects/RL/OGCRL_with_multistep_temporal_metric_distillation_and_informed_subgoals.mp4" type="video/mp4">
+        </video> -->
+
+
 
         <div class="divider"></div>
         <div class="section">
